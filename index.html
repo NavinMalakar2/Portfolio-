@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navin Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo"><span id="N">N</span><span>AVIN.</span></h1>
+               
+                <ul id="sidemenu">
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <div>
+                    <p>MERN Developer</p>
+                    <h1>Hi, I'm <span>Navin Malakar</span><br> From India</h1>
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+                                <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/4.2.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1>About Me</h1>
+                    <p>I’m MERN stack developer,with hands-on experience in building dynamic and responsive web applications using MongoDB, Express.js, React, and Node.js. Seeking a challenging role in a growth-oriented company to leverage my skills in front-end and back-end development, problem-solving, and building scalable applications while continuously learning and contributing to innovative projects.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"onclick="opentab('eduction')">Eduction</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>FRONTEND</span><br>
+                                <b>HTML, CSS, JavaScript</b> <br>
+                                <b>React.js</b> - Component-based architecture, Hooks, State Management, Redux <br>
+                                <b>Tailwind CSS</b> <br>
+                                <b>Responsive Design</b>
+                            </li>
+                            <li><span>BACKEND</span><br>
+                                <b>Node.js</b> – Server-side programming <br>
+                                <b>Express.js</b> – RESTful API development
+                            </li>
+                            <li><span>DATABASE</span><br>
+                                <b>MongoDB</b> – Database design, querying, and indexing
+                            </li>
+                            <li><span>OTHER</span><br>
+                                <b>Version Control</b> – Git and GitHub <br>
+                                <b>Deployment</b> – Experience with Vercel, Netlify, or GitHubPage <br>
+                                <b>Object oriented programing ,Agile Development, Data Structure, DBMS, Artificial Intellligence</b>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <p class="experience-content">I am a web developer with a strong understanding of HTML5, CSS, JavaScript, and the MERN stack. As a fresher, I have built several projects to improve my skills and learn more about web development. Here are some of the key projects I’ve worked on:</p>
+                        <ul>
+                            <li><span>Friendshipday Book (Personal Project)</span><br>
+                                <b>Technologies</b>- HTML5, CSS, JavaScript <br>
+                                <b>Description</b>- In honor of Friendship Day, I’ve created a unique digital book using HTML, CSS, and JavaScript to celebrate the wonderful friends in our lives. This project is a heartfelt tribute to the amazing people who bring joy, support, and laughter into our days. <br>
+                                <b>Live Link</b>- <a href="https://friendshipday-book.vercel.app/">Click Here</a><br>
+                                <b>GitHub Link</b>- <a href="https://github.com/NavinMalakar2/Friendshipday-book">Click Here</a>
+                            </li>
+                            <li><span>Redbus Clone (Personal Project)</span><br>
+                                <b>Technologies</b>- HTML5 ,CSS<br>
+                                <b>Description</b>- Built a simple clone of the Red Bus website using only HTML and CSS. The project replicates the homepage design, including navigation bar, search form, and layout. Focused on responsive design and ensuring a clean user interface. The clone serves as a static, front-end replica without dynamic functionality.<br>
+                                <b>GitHub Link</b>- <a href="https://github.com/NavinMalakar2/RedBus_Clone">Click Here</a>
+                            </li>
+                            <li><span>Gmail Clone (Personal Project)</span><br>
+                                <b>Technologies</b>- HTML5 ,Tailwind CSS<br>
+                                <b>Description</b>- Developed a front-end clone of Gmail’s user interface using HTML and Tailwind CSS. The project includes a responsive inbox layout, side navigation bar, and email list display, closely mimicking Gmail’s design. Focused on creating a clean, responsive UI that adapts well to different screen sizes. The project highlights modern web design techniques using utility-first CSS.<br>
+                                <b>GitHub Link</b>- <a href="https://github.com/NavinMalakar2/Gmail-clone">Click Here</a>
+                            </li>
+                            <li><span>Drowsiness Detection (Final Year Project)</span><br>
+                                <b>Technologies</b>- Python, OpenCV, Dlib, Machine Learning<br>
+                                <b>Description</b>- Built a real-time drowsiness detection system using computer vision techniques. The system captures live video input, tracks facial landmarks (especially the eyes), and uses an algorithm to detect signs of drowsiness based on eye blink rate and duration. If drowsiness is detected, an alert system triggers to warn the user, helping prevent accidents. This project demonstrates the application of machine learning and image processing in safety-critical environments.<br>
+                                <b>GitHub Link</b>- <a href="https://github.com/NavinMalakar2/Drowsiness_Detection">Click Here</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="eduction">
+                        <ul>
+                            <li><span>Feb2024 - Current</span><br>MERN Stack Training Course at Physics Wallah</li>
+                            <li><span>2020 - 2024</span><br>B.tech(Computer Science) from Medi-Caps University Indore</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- services -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Web Development</h2>
+                    <p>I create dynamic and responsive web applications using the MERN stack (MongoDB, Express.js, React, Node.js). My focus is on building user-friendly interfaces and robust backend systems that ensure seamless performance.</p>
+                    <a href="">Learn More</a>
+                </div>
+                <div>
+                    <h2>Frontend Development:</h2>
+                    <p>I specialize in creating visually appealing and responsive designs using HTML, CSS, and JavaScript. I also have experience with frameworks like React and libraries like Tailwind CSS for efficient styling.</p>
+                    <a href="">Learn More</a>
+                </div>
+                <div>
+                    <h2>Backend Development</h2>
+                    <p>I develop scalable server-side applications using Node.js and Express.js. I can create RESTful APIs and handle database management using MongoDB, ensuring your application functions smoothly.</p>
+                    <a href="">Learn More</a>
+                </div>
+                <div>
+                    <h2>Maintenance & Support:</h2>
+                    <p>I offer ongoing maintenance and support for your web applications to ensure they remain up-to-date, secure, and fully functional. This includes bug fixes, performance optimization, and feature enhancements.</p>
+                    <a href="">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- portfolio -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1>My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <h1>Friendshipday Book</h1>
+                    <video controls>
+                        <source src="img/Friendshipday.mp4">
+                    </video>
+                </div>
+                <div class="work">
+                    <h1>Redbus Clone</h1>
+                    <video controls>
+                        <source src="img/RedBusClone.mp4">
+                    </video>
+                </div>
+                <div class="work">
+                    <h1>Gmail Clone</h1>
+                    <video controls>
+                        <source src="img/GmailClone.mp4">
+                    </video>
+                </div>
+                <div class="work">
+                    <h1>Drowsiness Detection </h1>
+                    <img src="img/DD.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- contact -->
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fas fa-paper-plane"></i> navinmalakar823@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> 8109842266</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/navin_malakar_2003/profilecard/?igsh=czJ5c3gwamV6NGVo"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/navin-malakar-52176b285?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/NavinMalakar2"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="img/NAVIN CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contect-right">
+                    <form action="" name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright@NavinMalakar</p>
+        </div>
+     </div>
+
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
