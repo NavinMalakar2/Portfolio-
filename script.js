@@ -26,16 +26,22 @@ function closemenu(){
   const form = document.forms['submit-to-google-sheet']
     const msg=document.getElementById("msg")
 
-    
+   
   form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {
-        msg.innerHTML="Message sent successfully"
-        setTimeout(function(){
-            msg.innerHTML=""
-        },2000)
-        form.reset()
-      })
-      .catch(error => console.error('Error!', error.message))
-  })
+    e.preventDefault();
+    msg.innerHTML = "Sending..."; // Show an immediate message when the form is submitted
+
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"; // Update the message after successful submission
+            setTimeout(() => {
+                msg.innerHTML = ""; // Clear the message after 1 second
+            }, 1000);
+            form.reset(); // Reset the form
+        })
+        .catch(error => {
+            msg.innerHTML = "Error! Message not sent."; // Show error message
+            console.error('Error!', error.message);
+        });
+});
+
